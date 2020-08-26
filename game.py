@@ -139,6 +139,12 @@ def main(win, width, height, player_width, player_height, player1_x, player2_x):
         draw_window(win, width, height, player_width, player_height, player1_x, player2_x, player1_y, player2_y,
                     player1_score, player2_score, ball)
         ball.move(player1_x, player2_x, player1_y, player2_y)
+
+        if player1_score == 10:
+            display_mesg(win, "Computer Won")
+        if player2_score == 10:
+            display_mesg(win, "You Won")
+
         pygame.display.update()
 
 
