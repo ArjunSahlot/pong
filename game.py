@@ -101,7 +101,6 @@ def main(win, width, height, player_width, player_height, player1_x, player2_x):
     ball = Ball(width // 2, random.randint(16, height - 16))
     run = True
     clock = pygame.time.Clock()
-    pygame.time.delay(1000)
     while run:
         clock.tick(FPS)
         if ball.x - ball.radius <= 0:
